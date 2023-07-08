@@ -1,0 +1,268 @@
+ /* CSS Reset */
+ * {
+     margin: 0;
+     font-family: 'Trochut', cursive;
+     font-family: 'Ysabeau Infant', sans-serif;
+     border: border-box;
+ }
+
+ header {
+     background-color: #104068;
+     border: none;
+     display: flex;
+     color: white;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0.95rem;
+     height: 58px;
+     z-index: 1;
+     position: fixed;
+     left: 0;
+     right: 0;
+     top: 0;
+ }
+
+ .left img {
+     height: 75px;
+     width: 125px;
+     box-shadow: 10px 10px 10px rgb(34, 34, 34);
+ }
+
+ .mid {
+     font-size: 2.5rem;
+     text-decoration: 1px underline rgb(192, 7, 7);
+     color: rgb(255, 255, 255);
+     padding: 0px 10px 0px 10px;
+     margin-left: 21rem;
+     text-align: center;
+ }
+
+ .right a {
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+     font-size: 1rem;
+     display: inline;
+     margin: 5px;
+     padding-right: 0.85rem;
+     font-weight: 250;
+ }
+
+ .right a:hover {
+     color: rgb(255, 255, 255);
+     text-decoration: 1px underline red;
+     box-shadow: 10px 10px 10px rgb(34, 34, 34);
+     padding-left: 5px;
+     padding-right: 5px;
+     font-weight: 600;
+ }
+
+ /* CSS For Main */
+ main {
+     padding-top: 120px;
+     background-color: #d6e8ff;
+     background-size: cover;
+     height: 1600px;
+     background-repeat: no-repeat;
+     text-align: center;
+ }
+
+ .heading {
+     margin: 30px 350px 30px 350px;
+     padding: 10px;
+     border: 1px gray;
+     border-radius: 10px;
+     ;
+     background-color: rgb(183, 212, 255);
+ }
+
+ /* Form to register for online classes */
+ .container {
+     margin: 100px 200px 20px 200px;
+     padding: 10px;
+     border-radius: 10px;
+     color: rgb(31, 27, 27);
+     display: inline-block;
+     justify-content: center;
+     background-color: rgb(183, 212, 255);
+     text-align: center;
+     box-shadow: 10px 10px 10px rgb(29, 26, 26);
+     z-index: 0;
+     height: 500px;
+     background-image: url("bgDigi.jpg");
+     background-size: cover;
+ }
+
+ .form-group1 input,
+ .form-group2 input {
+     display: block;
+     margin: 20px 50px 10px 50px;
+     padding: 10px 50px 10px 50px;
+     background-color: #d6e8ff;
+     border-radius: 10px;
+     font-size: 0.95rem;
+     font-weight: 800;
+ }
+
+ .form-group input[type='text']::placeholder {
+     text-align: left;
+ }
+
+ .btn {
+     border-radius: 10px;
+     padding: 10px 30px;
+     margin: 30px 0px 30px 0px;
+     font-size: 20px;
+     box-shadow: 10px 10px 10px rgb(29, 26, 26);
+ }
+
+ .container:hover {
+     color: rgb(0, 0, 0);
+     background-color: rgb(131, 177, 247);
+ }
+
+ .container input:hover,
+ .btn:hover {
+     background-color: rgb(250, 195, 247);
+ }
+
+
+
+ /* Footer  */
+ footer {
+     padding-top: 50px;
+     text-align: center;
+     height: 200px;
+     font-weight: 600;
+     background-color: #9cc6fd;
+ }
+
+ footer a {
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+     background-color: #104068;
+     margin: 10px 0px 20px 0;
+     border-radius: 10px;
+     padding: 5px 15px 5px 15px;
+     font-size: 1.5rem;
+ }
+
+ footer a:hover {
+     color: rgb(255, 255, 255);
+     box-shadow: 10px 10px 10px black;
+ }
+
+ footer p {
+     padding: 10px;
+     font-size: 1.2rem;
+ }
+
+
+ @media (max-width: 600px) {
+     * {
+         margin: 0px;
+         padding: 0px;
+     }
+
+     header {
+         height: 25px;
+         padding: 10px;
+         margin: 0px;
+     }
+
+     .left img {
+         margin: 0px;
+         padding-top: 5px;
+         height: 35px;
+         width: 55px;
+     }
+
+     .mid {
+         height: 15px;
+         margin: 0px;
+         padding: 7.5px;
+         font-size: 0.6rem;
+         font-weight: 600;
+     }
+
+     .right a {
+         height: 15px;
+         padding: 0px;
+         margin: 0px;
+         font-size: 0.4rem;
+     }
+
+     main {
+         height: 1900px;
+         margin-top: 5px;
+         padding-top: 50px;
+     }
+
+     .heading {
+         margin: 20px 30px 0px 30px;
+         padding: 10px;
+         font-size: 0.55rem;
+     }
+
+
+     /* Form to register for online classes */
+     .container {
+         margin: 50px 20px 20px 20px;
+         padding: 0px;
+         padding-top: 10px;
+         display: block;
+         justify-content: center;
+         text-align: center;
+         z-index: 0;
+         height: 500px;
+         background-image: url("bgDigi.jpg");
+         background-size: cover;
+     }
+
+     .form-group1 input,
+     .form-group2 input {
+         display: block;
+         margin: 20px 50px 10px 50px;
+         padding: 5px 50px 5px 50px;
+         background-color: #d6e8ff;
+         border-radius: 10px;
+         font-size: 0.95rem;
+         font-weight: 800;
+     }
+
+     .form-group input[type='text']::placeholder {
+         text-align: left;
+     }
+
+     .btn {
+         border-radius: 10px;
+         padding: 5px 30px;
+         margin: 30px 0px 30px 0px;
+         font-size: 20px;
+         box-shadow: 10px 10px 10px rgb(29, 26, 26);
+     }
+
+
+     /* Footer  */
+     footer {
+         position: absolute;
+         top: 1400px;
+         width: 100%;
+         height: 20px;
+         background-color: transparent;
+
+     }
+
+     footer a {
+         height: 0px;
+         font-size: 0.55rem;
+         padding-top: 2px;
+         margin-top: 0px;
+     }
+
+     footer p {
+         margin: 5px;
+
+         padding-bottom: 0px;
+         font-size: 0.55rem;
+     }
+ }
